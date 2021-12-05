@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playroom</title>
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/png" href="img/fav.png"/>
+  <!-- Slick Slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Spartan:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  
+  <!-- Header -->
+  <header class="header">
+    <img class="header__overlay wow fadeInLeftBig" src="img/header-stars-yellow.png" alt="image">
+    <img class="header__overlay wow fadeInLeftBig" data-wow-delay="1.5s" src="img/header-cubes.png" alt="image">
+    <img class="header__overlay wow fadeInUpBig" data-wow-delay="2s" src="img/header-book.png" alt="image">
+    <img class="header__overlay wow fadeInDownBig" data-wow-delay="3s" src="img/header-balloons.png" alt="image">
+    <img class="header__overlay wow fadeInLeftBig" data-wow-delay="2.5s" src="img/header-stars-blue.png" alt="image">
+    <img class="header__overlay wow fadeInRightBig" data-wow-delay="3.5s" src="img/header-pencil.png" alt="image">
+    <img class="header__overlay wow fadeInUpBig" data-wow-delay="1s" src="img/header-rocket.png" alt="image">
+    <div class="container-fluid">
+      <div class="header__wrapper">
+        <div class="header__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="logo">
+          </a>
+          <nav class="header__menu">
+            <button class="header__menu-btn">
+              <span></span>
+            </button>
+            <ul class="header__items">
+              <li class="header__item">
+                <a class="header__link" href="#program">About Us</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#mission">Program</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#history">Admissions</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#join">Pictures & Videos</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#info">Blog</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#" onclick="showPopup()">Schedule a Tour</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__slider wow fadeInDownBig" data-wow-delay="0.5s">
+          <div class="header__slider-item">
+            <p class="header__slider-text">Our Approach Enables Students to </p>
+            <h2 class="header__slider-title">innovate</h2>
+          </div>
+          <div class="header__slider-item">
+            <p class="header__slider-text">Our Approach Enables Students to </p>
+            <h2 class="header__slider-title">problem-solve</h2>
+          </div>
+          <div class="header__slider-item">
+            <p class="header__slider-text">Our Approach Enables Students to </p>
+            <h2 class="header__slider-title">take risks</h2>
+          </div>
+          <div class="header__slider-item">
+            <p class="header__slider-text">Our Approach Enables Students to </p>
+            <h2 class="header__slider-title">inquire</h2>
+          </div>
+        </div>
+        <div class="header__phone">
+          <a class="tel-link" href="tel:+2345678901">(234) 567-8901</a>
+          <a class="tel-link" href="tel:+2345678902">(234) 567-8902</a>
+        </div>
+        <div class="header__address">
+          <p class="header__address-text">670 Lafayette Ave,<br>Brooklyn, NY 11216</p>
+        </div>
+        <div class="header__social">
+          <ul class="header__social-items">
+            <li class="header__social-item">
+              <a class="header__social-link" href="#">Facebook</a>
+            </li>
+            <li class="header__social-item">
+              <a class="header__social-link" href="#">YouTube</a>
+            </li>
+            <li class="header__social-item">
+              <a class="header__social-link" href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      
+      <!-- Program -->
+      <section class="program" id="program">
+        <div class="container-fluid">
+          <div class="program__wrapper">
+            <div class="program__card">
+              <div class="program__item">
+                <div class="program__front">
+                  <img class="program__front-img" src="img/program-1.svg" alt="icon">
+                  <h1 class="program__front-subtitle">Admissions</h1>
+                  <p class="program__front-title title-small">The future is uncertain. We need to be open and ready for it.</p>
+                </div>
+                <div class="program__back">
+                  <p class="program__back-title title-small">The future is uncertain. We need to be open and ready for it.</p>
+                  <div class="program__back-content">
+                    <p class="program__back-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec et odio pellentesque.</p>
+                  </div>
+                  <a class="program__back-btn" href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="program__card">
+              <div class="program__item">
+                <div class="program__front">
+                  <img class="program__front-img" src="img/program-2.svg" alt="icon">
+                  <h2 class="program__front-subtitle">Approach</h2>
+                  <p class="program__front-title title-small">It’s estimated that 65% of the jobs our students will have don’t even exist yet.</p>
+                </div>
+                <div class="program__back">
+                  <p class="program__back-title title-small">It’s estimated that 65% of the jobs our students will have don’t even exist yet.</p>
+                  <div class="program__back-content">
+                    <p class="program__back-text">Feugiat vivamus at augue eget arcu dictum varius. Pellentesque eu tincidunt tortor aliquam nulla. Arcu cursus euismod quis viverra. Sed turpis tincidunt id aliquet risus feugiat in.</p>
+                    <ul class="program__back-list">
+                      <li class="program__back-item">Urna nunc id cursus metus</li>
+                      <li class="program__back-item">Porta non pulvinar neque laoreet</li>
+                      <li class="program__back-item">Nisi scelerisque eu ultrices </li>
+                    </ul>
+                  </div>
+                  <a class="program__back-btn" href="#">Learn more</a>
+                </div>
+            </div>
+          </div>
+          <div class="program__card">
+            <div class="program__item">
+              <div class="program__front">
+                <img class="program__front-img" src="img/program-3.svg" alt="icon">
+                <h2 class="program__front-subtitle">Team</h2>
+                <p class="program__front-title title-small">Our educators are seasoned progressive educators and leaders, designers, passionate learners.</p>
+              </div>
+              <div class="program__back">
+                <p class="program__back-title title-small">Our educators are seasoned progressive educators and leaders, designers, passionate learners.</p>
+                <div class="program__back-content">
+                  <p class="program__back-text">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec et odio pellentesque. </p>
+                </div>
+                <a class="program__back-btn" href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission -->
+      <section class="mission" id="mission">
+        <div class="container">
+          <h2 class="mission__title title">Research-Based Happiness</h2>
+          <div class="mission__wrapper">
+            <span class="mission__subtitle">Mission</span>
+            <h3 class="mission__description">Students will need to develop curiosity, imagination, resilience and agency.</h3>
+            <p class="mission__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <img class="mission__image wow fadeInRightBig" data-wow-duration="2s" src="img/mission-bg.png" alt="image">
+      </section>
+
+      <!-- History -->
+      <section class="history" id="history">
+        <img class="history__image wow fadeInLeftBig" data-wow-duration="2s" src="img/histoty-bg.png" alt="image">
+        <div class="container">
+          <div class="history__wrapper">
+            <div class="history__content">
+              <span class="history__subtitle">Our history</span>
+              <h2 class="history__title">Students will need to develop curiosity, imagination, resilience and agency.</h2>
+              <p class="history__text">Nisl condimentum id venenatis a condimentum vitae.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join -->
+      <section class="join wow fadeInUpBig" id="join" data-wow-duration="2s">
+        <div class="container">
+          <h2 class="join__title title">Interested<br>in Joining Us?</h2>
+          <a class="join__button btn" href="#">Schedule A Tour</a>
+        </div>
+      </section>
+
+      <!-- Info -->
+      <section class="info" id="info">
+        <div class="container-fluid">
+          <div class="info__wrapper">
+            <div class="info__item">
+              <div class="info__body wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="info__content">
+                  <img class="info__image" src="img/quo.svg" alt="icon">
+                  <span class="info__subtitle">Testimonials</span>
+                  <h2 class="info__title">What our parents say</h2>
+                  <div class="info__portfolio">
+                    <img class="info__portfolio-img" src="img/info-portfolio-1.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-2.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-3.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-4.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-5.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-6.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-7.jpg" alt="image">
+                    <img class="info__portfolio-img" src="img/info-portfolio-8.jpg" alt="image">
+                  </div>
+                </div>
+                <a class="info__btn" href="#">Parent Testimonials</a>
+              </div>
+            </div>
+            <div class="info__item">
+              <div class="info__body wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <div class="info__content">
+                  <img class="info__image" src="img/blog.svg" alt="icon">
+                  <span class="info__subtitle">Blog</span>
+                  <h2 class="info__title">What's new at school</h2>
+                </div>
+                <a class="info__btn" href="#">our news</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-fluid">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <div class="footer__content">
+              <a class="logo" href="#">
+                <img class="logo__img" src="img/logo.svg" alt="logo">
+              </a>
+              <div class="footer__body">
+                <div class="footer__subscribe">
+                  <p class="footer__subscribe-subtitle">
+                    Join our newsletter!
+                  </p>
+                  <h2 class="footer__subscribe-title">
+                    Welcome to the our community!
+                  </h2>
+                  <form class="footer__subscribe-form">
+                    <div class="footer__subscribe-container">
+                      <input class="footer__subscribe-input" type="email" placeholder="Your email address" required>
+                    </div>
+                    <button class="footer__subscribe-btn" type="submit">Subscribe</button>
+                    <p class="footer__subscribe-text">
+                      By signing and clicking Subscribe, you affirm you have read and agree to the Privacy Policy and Terms of Use, and want to receive news.
+                    </p>
+                  </form>
+                </div>
+                <div class="footer__phone">
+                  <a class="tel-link" href="tel:+2345678901">(234) 567-8901</a>
+                  <br>
+                  <a class="tel-link" href="tel:+2345678902">(234) 567-8902</a>
+                </div>
+                <p class="footer__address">
+                  670 Lafayette Ave, Brooklyn, NY 11216
+                </p>
+                <a class="footer__email" href="mailto:name@example.com">name@example.com</a>
+                <p class="footer__working-time">
+                  Mon - Fri:7am - 5 pm <br> ​​Sat: 8am - 2pm
+                </p>
+                <ul class="footer__social">
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                        <path d="M10.0695 28V15.8667H5.8335V10.2667H10.0695V6.35833C10.0695 5.28889 10.2275 4.35556 10.5435 3.55833C10.8792 2.76111 11.3334 2.1 11.9061 1.575C12.4985 1.05 13.1996 0.661111 14.0093 0.408333C14.819 0.136111 15.7076 0 16.6753 0C17.5837 0 18.4033 0.0291667 19.134 0.0875C19.8646 0.126389 20.3386 0.165278 20.5558 0.204167V4.6375H17.8898C16.8432 4.6375 16.152 4.86111 15.8162 5.30833C15.4805 5.75556 15.3127 6.33889 15.3127 7.05833V10.2667H21.0002L19.1043 15.8667H15.3127V28H10.0695Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                        <path d="M27.7266 8.93606C27.7266 8.93606 27.6445 8.57796 27.4805 7.86175C27.3164 7.14555 27.0247 6.57626 26.6055 6.15388C26.0768 5.58459 25.5391 5.25404 24.9922 5.16222C24.4635 5.05203 24.0625 4.97857 23.7891 4.94184C22.8229 4.86839 21.7656 4.8133 20.6172 4.77657C19.4688 4.73984 18.4023 4.71229 17.418 4.69393C16.4518 4.67556 15.6406 4.66638 14.9844 4.66638C14.3281 4.66638 14 4.66638 14 4.66638C14 4.66638 13.6719 4.66638 13.0156 4.66638C12.3594 4.66638 11.5391 4.67556 10.5547 4.69393C9.58854 4.71229 8.53125 4.73984 7.38281 4.77657C6.23438 4.8133 5.17708 4.86839 4.21094 4.94184C3.9375 4.97857 3.52734 5.05203 2.98047 5.16222C2.45182 5.25404 1.92318 5.58459 1.39453 6.15388C0.97526 6.57626 0.683594 7.14555 0.519531 7.86175C0.355469 8.57796 0.273438 8.93606 0.273438 8.93606C0.273438 8.93606 0.227865 9.41353 0.136719 10.3685C0.0455729 11.3234 0 12.3702 0 13.5087V15.6574C0 16.7959 0.0455729 17.8427 0.136719 18.7976C0.227865 19.7342 0.273438 20.2025 0.273438 20.2025C0.273438 20.2025 0.355469 20.5698 0.519531 21.3043C0.683594 22.0205 0.97526 22.5898 1.39453 23.0122C1.92318 23.5815 2.48828 23.9121 3.08984 24.0039C3.70964 24.0957 4.17448 24.1692 4.48438 24.2243C5.04948 24.2793 5.86068 24.3253 6.91797 24.362C7.97526 24.3987 9.02344 24.4263 10.0625 24.4446C11.1198 24.463 12.0404 24.4814 12.8242 24.4997C13.6081 24.4997 14 24.4997 14 24.4997C14 24.4997 14.3281 24.4997 14.9844 24.4997C15.6406 24.4997 16.4518 24.4905 17.418 24.4722C18.4023 24.4538 19.4688 24.4263 20.6172 24.3895C21.7656 24.3344 22.8229 24.2702 23.7891 24.1967C24.0625 24.1783 24.4635 24.1233 24.9922 24.0314C25.5391 23.9212 26.0768 23.5815 26.6055 23.0122C27.0247 22.5898 27.3164 22.0205 27.4805 21.3043C27.6445 20.5698 27.7266 20.2025 27.7266 20.2025C27.7266 20.2025 27.7721 19.7342 27.8633 18.7976C27.9544 17.8427 28 16.7959 28 15.6574V13.5087C28 12.3702 27.9544 11.3234 27.8633 10.3685C27.7721 9.41353 27.7266 8.93606 27.7266 8.93606ZM11.1016 18.2467V10.3134L18.6758 14.28L11.1016 18.2467Z"></path>
+                      </svg>                      
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                        <path d="M14 2.51562C15.8776 2.51562 17.099 2.52474 17.6641 2.54297C18.2474 2.54297 18.9128 2.5612 19.6602 2.59766C20.4622 2.63411 21.2188 2.76172 21.9297 2.98047C22.6589 3.18099 23.306 3.5638 23.8711 4.12891C24.4362 4.69401 24.819 5.34115 25.0195 6.07031C25.2383 6.78125 25.3659 7.53776 25.4023 8.33984C25.4388 9.08724 25.457 9.7526 25.457 10.3359C25.4753 10.901 25.4844 12.1224 25.4844 14C25.4844 15.8776 25.4753 17.1081 25.457 17.6914C25.457 18.2565 25.4388 18.9128 25.4023 19.6602C25.3659 20.4622 25.2383 21.2279 25.0195 21.957C24.819 22.668 24.4362 23.306 23.8711 23.8711C23.306 24.4362 22.6589 24.8281 21.9297 25.0469C21.2188 25.2474 20.4622 25.3659 19.6602 25.4023C18.9128 25.4388 18.2474 25.4661 17.6641 25.4844C17.099 25.4844 15.8776 25.4844 14 25.4844C12.1224 25.4844 10.8919 25.4844 10.3086 25.4844C9.74349 25.4661 9.08724 25.4388 8.33984 25.4023C7.53776 25.3659 6.77214 25.2474 6.04297 25.0469C5.33203 24.8281 4.69401 24.4362 4.12891 23.8711C3.5638 23.306 3.17188 22.668 2.95312 21.957C2.7526 21.2279 2.63411 20.4622 2.59766 19.6602C2.5612 18.9128 2.53385 18.2565 2.51562 17.6914C2.51562 17.1081 2.51562 15.8776 2.51562 14C2.51562 12.1224 2.51562 10.901 2.51562 10.3359C2.53385 9.7526 2.5612 9.08724 2.59766 8.33984C2.63411 7.53776 2.7526 6.78125 2.95312 6.07031C3.17188 5.34115 3.5638 4.69401 4.12891 4.12891C4.69401 3.5638 5.33203 3.18099 6.04297 2.98047C6.77214 2.76172 7.53776 2.63411 8.33984 2.59766C9.08724 2.5612 9.74349 2.54297 10.3086 2.54297C10.8919 2.52474 12.1224 2.51562 14 2.51562ZM14 0C12.1042 0 10.8555 0.00911458 10.2539 0.0273438C9.65234 0.0273438 8.97786 0.0455729 8.23047 0.0820312C7.08203 0.136719 6.01562 0.328125 5.03125 0.65625C4.04688 0.984375 3.15365 1.54948 2.35156 2.35156C1.54948 3.15365 0.984375 4.04688 0.65625 5.03125C0.328125 6.01562 0.136719 7.08203 0.0820312 8.23047C0.0455729 8.97786 0.0182292 9.65234 0 10.2539C0 10.8555 0 12.1042 0 14C0 15.8958 0 17.1445 0 17.7461C0.0182292 18.3477 0.0455729 19.0221 0.0820312 19.7695C0.136719 20.918 0.328125 21.9844 0.65625 22.9688C0.984375 23.9531 1.54948 24.8464 2.35156 25.6484C3.15365 26.4505 4.04688 27.0156 5.03125 27.3438C6.01562 27.6719 7.08203 27.8633 8.23047 27.918C8.97786 27.9544 9.65234 27.9727 10.2539 27.9727C10.8555 27.9909 12.1042 28 14 28C15.8958 28 17.1445 27.9909 17.7461 27.9727C18.3477 27.9727 19.0221 27.9544 19.7695 27.918C20.918 27.8633 21.9844 27.6719 22.9688 27.3438C23.9531 27.0156 24.8464 26.4505 25.6484 25.6484C26.4505 24.8464 27.0156 23.9531 27.3438 22.9688C27.6719 21.9844 27.8633 20.918 27.918 19.7695C27.9544 19.0221 27.9727 18.3477 27.9727 17.7461C27.9909 17.1445 28 15.8958 28 14C28 12.1042 27.9909 10.8555 27.9727 10.2539C27.9727 9.65234 27.9544 8.97786 27.918 8.23047C27.8633 7.08203 27.6719 6.01562 27.3438 5.03125C27.0156 4.04688 26.4505 3.15365 25.6484 2.35156C24.8464 1.54948 23.9531 0.984375 22.9688 0.65625C21.9844 0.328125 20.918 0.136719 19.7695 0.0820312C19.0221 0.0455729 18.3477 0.0273438 17.7461 0.0273438C17.1445 0.00911458 15.8958 0 14 0ZM14 6.80859C13.0156 6.80859 12.0859 7 11.2109 7.38281C10.3359 7.7474 9.57031 8.25781 8.91406 8.91406C8.25781 9.57031 7.73828 10.3359 7.35547 11.2109C6.99089 12.0859 6.80859 13.0156 6.80859 14C6.80859 14.9844 6.99089 15.9141 7.35547 16.7891C7.73828 17.6641 8.25781 18.4297 8.91406 19.0859C9.57031 19.7422 10.3359 20.2617 11.2109 20.6445C12.0859 21.0091 13.0156 21.1914 14 21.1914C14.9844 21.1914 15.9141 21.0091 16.7891 20.6445C17.6641 20.2617 18.4297 19.7422 19.0859 19.0859C19.7422 18.4297 20.2526 17.6641 20.6172 16.7891C21 15.9141 21.1914 14.9844 21.1914 14C21.1914 13.0156 21 12.0859 20.6172 11.2109C20.2526 10.3359 19.7422 9.57031 19.0859 8.91406C18.4297 8.25781 17.6641 7.7474 16.7891 7.38281C15.9141 7 14.9844 6.80859 14 6.80859ZM14 18.6758C12.7057 18.6758 11.6029 18.2201 10.6914 17.3086C9.77995 16.3971 9.32422 15.2943 9.32422 14C9.32422 12.7057 9.77995 11.6029 10.6914 10.6914C11.6029 9.77995 12.7057 9.32422 14 9.32422C15.2943 9.32422 16.3971 9.77995 17.3086 10.6914C18.2201 11.6029 18.6758 12.7057 18.6758 14C18.6758 15.2943 18.2201 16.3971 17.3086 17.3086C16.3971 18.2201 15.2943 18.6758 14 18.6758ZM23.1602 6.53516C23.1602 6.99089 22.9961 7.38281 22.668 7.71094C22.3398 8.03906 21.9388 8.20312 21.4648 8.20312C21.0091 8.20312 20.6172 8.03906 20.2891 7.71094C19.9609 7.38281 19.7969 6.99089 19.7969 6.53516C19.7969 6.0612 19.9609 5.66016 20.2891 5.33203C20.6172 5.00391 21.0091 4.83984 21.4648 4.83984C21.9388 4.83984 22.3398 5.00391 22.668 5.33203C22.9961 5.66016 23.1602 6.0612 23.1602 6.53516Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__bottom">
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">About Us</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Program</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Admissions</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Pictures & Videos</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Events</a>
+                  </li>
+                </ul>
+                <div class="footer__copyright">
+                  <p class="footer__copyright-text">
+                    Copyright © 2021.
+                  </p>
+                  <ul class="footer__copyright-menu">
+                    <li class="footer__copyright-item">
+                      <a class="footer__copyright-link" href="#">Privacy Policy </a>
+                    </li>
+                    <li class="footer__copyright-item">
+                      <a class="footer__copyright-link" href="#">Terms of Use</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__map" id="map">
+            </div>
+          </div>
+        </div>
+    </div>
+  </footer>
+
+
+  <!-- Popup -->
+  <div class="popup">
+    <div class="popup__overlay" onclick="hidePopup()"></div>
+    <button class="popup__close" onclick="hidePopup()">
+      <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8787 18.0001L-0.0606689 2.06077L2.06065 -0.0605469L18 15.8788L33.9393 -0.0605469L36.0607 2.06077L20.1213 18.0001L36.0607 33.9395L33.9393 36.0608L18 20.1214L2.06065 36.0608L-0.0606689 33.9395L15.8787 18.0001Z"/>
+      </svg>
+    </button>
+    <div class="popup__content">
+      <h2 class="popup__title">
+        Daytime parent tour
+      </h2>
+      <p class="popup__text">
+        If you are a parent interested in visiting us, please fill out the following  Inquiry Form:
+      </p>
+      <form class="form" action="#">
+        <div class="form__body">
+          <div class="form__wrapper">
+            <div class="form__item">
+              <label class="form__label" for="FormFirstName">Name*</label>
+              <input class="form__input" id="FormFirstName" type="text" name="first-name" placeholder="First name" required>
+            </div>
+            <div class="form__item">
+              <input class="form__input form__last-name" id="FormLastName" type="text" name="last-name" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="form__wrapper">
+            <div class="form__item">
+              <label class="form__label" for="FormEmail">Email address*</label>
+              <input class="form__input" id="FormEmail" type="email" name="email" placeholder="Your email address" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="FormPhone">Phone*</label>
+              <input class="form__input" id="FormPhone" type="tel" name="phone" placeholder="+38(###)-###-####" required>
+            </div>
+          </div>
+          <div class="form__wrapper">
+            <div class="form__item">
+              <label class="form__label" for="FormMonth">Dates I'm available for a tour *</label>
+              <div class="form__date">
+                <input class="form__input form__month" id="FormMonth" type="number" name="month" placeholder="MM" min="1" max="12" required>
+                <input class="form__input form__day" id="FormDay" type="number" name="day" placeholder="DD" min="1" max="31" required>
+                <input class="form__input form__year" id="FormYear" type="number" name="year" placeholder="YYYY" min="1950" max="2050" required>
+              </div>
+            </div>
+          </div>
+          <div class="form__textarea">
+            <label class="form__label" for="FormMessage">Message *</label>
+            <textarea class="form__input" id="FormMessage" name="message" placeholder="In order to give you the most insightful experience while you're here, what are you most interested in learning about (or seeing) on your tour" required></textarea>
+          </div>
+          <button class="form__btn" type="submit">Submit</button>
+          <p class="form__acceptance">By signing and clicking Submit, you affirm you have read and agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>, and want to receive news.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- toTop Button -->
+  <button onclick="topFunction()" id="toTop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 0.252563L19.3717 10.6655L18.6284 11.3345L10.0001 1.74741L1.37171 11.3345L0.628418 10.6655L10.0001 0.252563Z"></path>
+    </svg>
+  </button>
+
+
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Masked Input -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <!-- WOS JS -->
+  <script src="js/wow.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Google Map API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzjWhVvRmfYeD6wGtaFSP5kJrFRdDQ4dw&callback=initMap" async></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

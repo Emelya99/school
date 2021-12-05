@@ -1,0 +1,106 @@
+// Variables
+$access-color: #2D53CB;
+$hover-color: #FDC563;
+$purple-color: #694DDA;
+$blue-color: #45B3DF;
+$pink-color: #FA9DB7;
+$invert-color: #FFF;
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Spartan', sans-serif;
+$tablet: 1024px;
+$mobile: 767px;
+
+
+// Mixins
+@mixin for-tablet{
+    @media(max-width:$tablet){
+        @content;
+    } 
+}
+
+@mixin for-mobile{
+    @media(max-width:$mobile){
+        @content;
+    }
+}
+
+@mixin media-query($tablet-size, $tablet-lh, $mobile-size){
+    @media(max-width:$tablet){
+        font-size: $tablet-size;
+        line-height: $tablet-lh;
+    }
+    @media(max-width:$mobile){
+        font-size: $mobile-size;
+    }
+}
+
+@mixin flex($display, $justify-content, $align-items, $wrap){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    @media(max-width:$tablet){
+        padding: 60px 30px;
+    }
+    @media(max-width:$mobile){
+        padding: 60px 15px;
+    }
+}
+
+@mixin margin-bottom($mb,$mb-tablet,$mb-mobile){
+    margin-bottom: $mb;
+    @media(max-width:$tablet){
+        margin-bottom: $mb-tablet;
+    }
+    @media(max-width:$mobile){
+        margin-bottom: $mb-mobile;
+    }
+}
+
+@mixin background($imgpath, $position:center center, $repeat: no-repeat, $size:cover) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+        size: $size;
+    }
+}
+
+// Extend
+%subtitle{
+    display: block;
+    font-size: 24px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    @media(max-width:$mobile){
+        font-size: 20px;
+    }
+}
+
+%h3-style{
+    font-size: 48px;
+    line-height: 67px;
+    color: $invert-color;
+    @include media-query(38px,1.4em,30px);
+}
+
+%h4-style{
+    font-size: 36px;
+    line-height: 54px;
+    @include media-query(30px,1.5em,22px);
+}
+
+%h5-style{
+    font-size: 24px;
+    line-height: 1.5em;
+    @media(max-width:$mobile){
+        font-size: 20px;
+    }
+}
